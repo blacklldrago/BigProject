@@ -11,16 +11,23 @@ import intellect from './intellect.png'
 import go from './go.png'
 import fikir from './fikir.png'
 import yorux from './yorux.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 function Cases(){
+  
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (<div>
-    <div className={cs["container1"]}>
+    <div className={cs["container1"]} data-aos="flip-left" data-aos-duration="1500">
       <div className={cs["container"]}>
-        <div className={cs["work"]}>
+        <div className={cs["work"]} data-aos="fade-up" data-aos-duration="1500">
           <div className={cs["work1"]}>
             <p>Мы стремимся создавать взаимосвязанные бренды и услуги, а также проводить кампании для обеспечения стабильных и успешных отношений между компаниями и клиентами.</p>
           </div>
-          <div className={cs["work2"]}>
-            <h1>Наши работы</h1>
+          <div className={cs["work2"]} data-aos="fade-down" data-aos-duration="1500">
+            <h1  data-aos="zoom-in" data-aos-duration="1500">Наши работы</h1>
           </div>
         </div>
         <div className={cs["about"]}>
@@ -52,22 +59,22 @@ function Cases(){
       <div className={cs["container"]}>
         <h1 className={cs["brands"]}>БРЕНДЫ, ИСПОЛЬЗУЮЩИЕ НАШИ РЕШЕНИЯ</h1>
         <div className={cs["brand-img"]}>
-          <img src={tutus} alt="tutus" /> 
-          <img src={webart} alt="webart" />
-          <img src={intellect} alt="intellect" />
-          <img src={go} alt="go" />
-          <img src={fikir} alt="fikir" />
-          <img src={yorux} alt="yorux" />
+          <img data-aos="flip-down" data-aos-duration="2500" src={tutus} alt="tutus" /> 
+          <img data-aos="fade-up" data-aos-duration="2500" src={webart} alt="webart" />
+          <img data-aos="flip-down" data-aos-duration="2500" src={intellect} alt="intellect" />
+          <img data-aos="fade-up" data-aos-duration="2500" src={go} alt="go" />
+          <img data-aos="flip-down" data-aos-duration="2500" src={fikir} alt="fikir" />
+          <img data-aos="fade-up" data-aos-duration="2500" src={yorux} alt="yorux" />
         </div>
       </div>
     </div>
     <div className={cs["container3"]}>
       <div className={cs["container"]}>
       <div className={cs["we"]}>
-          <p className={cs["wep"]}>ХОТИТЕ РАБОТАТЬ С НАМИ?</p>
-          <h1>Мы хотели бы услышать больше о вашем проекте</h1>
+          <p data-aos="fade-right" data-aos-duration="2500" className={cs["wep"]}>ХОТИТЕ РАБОТАТЬ С НАМИ?</p>
+          <h1 data-aos="fade-left" data-aos-duration="2500">Мы хотели бы услышать больше о вашем проекте</h1>
           <div className={cs["circle"]}>
-          <p><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E"}}>Давай Поговорим</Link></p>
+          <p className='animate__animated animate__lightSpeedInRight animate__infinite'><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E"}}>Давай Поговорим</Link></p>
           </div>
         </div>
       </div>

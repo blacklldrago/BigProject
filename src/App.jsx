@@ -10,6 +10,8 @@ import Cases from './container/Cases/Cases';
 import Team from './container/Team/Team';
 import Blog from './container/Blog/Blog';
 
+import 'animate.css';
+
 function App() {
   
   return(<div>

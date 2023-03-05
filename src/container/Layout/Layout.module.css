@@ -34,6 +34,9 @@
     line-height: 16px;
 
 }
+.middle ul li:hover{
+    cursor: pointer;
+}
 .footer{
     padding-top: 100px;
     padding-bottom: 40px;

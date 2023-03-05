@@ -76,7 +76,9 @@
     border-radius: 100%;
 }
 .cir:hover{
+    
     background-color: #C9F31D;
+    border-color: #C9F31D;
     color: black;
     transition: 2s;
     cursor: pointer;
@@ -154,7 +156,8 @@
     cursor: pointer;
 }
 .circle:hover{
+    
     background-color: #C9F31D;
+    border-color: #C9F31D;
     transition: 2s;
-    border: none;
 }

@@ -30,8 +30,13 @@ import yoruxapp from  './yoruxapp.png';
 import yoruxweb from  './yoruxweb.png';
 import pink from  './pink.png';
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 // swioer
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -42,30 +47,33 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 function Homepage() {
 
-
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   return(<div>
-    <div className={sHome["container1"]}>
+    <div sHome={["container1"]}>
       <div className={sHome["container"]}>
         <div className={sHome["large-text"]}>
           <div className={sHome["large-text1"]}>
-          <p>ПОЗНАКОМЬТЕСЬ С КОМАНДОЙ РАЗРАБОТЧИКОВ</p>
-          <h1>SOFT</h1>
+          <p  data-aos="flip-right" data-aos-duration="3000">ПОЗНАКОМЬТЕСЬ С КОМАНДОЙ РАЗРАБОТЧИКОВ</p>
+          <h1  data-aos="fade-left" data-aos-duration="3000">SOFT</h1>
           </div>
           <div className={sHome["large-text2"]}>
           <div className={sHome["leg"]}>
 
-          <p>Мы понимаем вашу задачу, знаем ваш рынок и обладаем знаниями и опытом в области IT-решений с добавленной стоимостью. Вместе с нашими клиентами мы создаем уникальные преимущества. Любопытно как?</p> 
+          <p  data-aos="fade-up" data-aos-duration="3000">Мы понимаем вашу задачу, знаем ваш рынок и обладаем знаниями и опытом в области IT-решений с добавленной стоимостью. Вместе с нашими клиентами мы создаем уникальные преимущества. Любопытно как?</p> 
           </div>
           <div className={sHome["head"]}>
-          <h1>CLUB</h1>
+          <h1 className={sHome["k"]} data-aos="fade-up"
+     data-aos-duration="3000">CLUB</h1>
           </div>
         
           </div>
         </div>
         
         <div className={sHome["teachers"]}>
-          <img src={teachers} alt="" />
+          <img  src={teachers} alt="" />
         </div>
       </div>
     </div>
@@ -73,14 +81,16 @@ function Homepage() {
       <div className={sHome["container"]}>
           <div className={sHome["techno"]}>
             <div className={sHome["left-techno"]}>
-              <img src={homework} alt="" />
+              <img className='animate__animated animate__heartBeat animate__slower	10' src={homework} alt="" />
             </div>
             <div className={sHome["right-techno"]}>
-                <h1>МЫ ПРЕДЛАГАЕМ ВЫСОКО-ТЕХНОЛОГИЧНЫЕ РЕШЕНИЯ</h1>
+                <h1 data-aos="flip-down"
+     data-aos-duration="3000" >МЫ ПРЕДЛАГАЕМ ВЫСОКО-ТЕХНОЛОГИЧНЫЕ РЕШЕНИЯ</h1>
                 <div className={sHome["another"]}>
-                <p> Мы работаем в сфере IT уже несколько лет и теперь хотим перенести наш опыт в ваш бизнес. С 2012 года наша команда работает с локальными и глобальными клиентами.</p>
-                <div className={sHome["circle"]}>
-                  <h1><Link to = "/about"style={{textDecoration:"none", color:"white"}} >О НАС</Link></h1>
+                <p data-aos="flip-right"
+     data-aos-duration="3000"> Мы работаем в сфере IT уже несколько лет и теперь хотим перенести наш опыт в ваш бизнес. С 2012 года наша команда работает с локальными и глобальными клиентами.</p>
+                <div className={sHome["circle"]} data-aos="flip-down"  data-aos-duration="3000" >
+                  <h1 className='animate__animated animate__bounceInDown'><Link to = "/about"style={{textDecoration:"none", color:"white"}} >О НАС</Link></h1>
                 </div>
                 </div>
             </div>
@@ -91,10 +101,10 @@ function Homepage() {
       <div className={sHome["container"]}>
           <div className={sHome["serv"]}>
             <div className={sHome["serv1"]}>
-              <p>Мы стремимся создавать взаимосвязанные бренды и услуги, а также проводить кампании для обеспечения стабильных и успешных отношений между компаниями и клиентами.</p>
+              <p data-aos="zoom-in-right" data-aos-duration="3000">Мы стремимся создавать взаимосвязанные бренды и услуги, а также проводить кампании для обеспечения стабильных и успешных отношений между компаниями и клиентами.</p>
             </div>
             <div className={sHome["serv2"]}>
-              <h1>С нашими услугами вы можете уверенно развивать свой бизнес</h1>
+              <h1 data-aos="zoom-in-down" data-aos-duration="3000" >С нашими услугами вы можете уверенно развивать свой бизнес</h1>
             </div>
           </div>
           <div className={sHome["proffi"]}>
@@ -121,33 +131,33 @@ function Homepage() {
     </div>  
     <div className={sHome["container4"]}>
       <div className={sHome["container"]}>
-        <p className={sHome["use1"]}>Какие Технологии Мы Используем</p>
-        <h1 className={sHome["use2"]}>Наши технологии</h1>
+        <p className={sHome["use1"]} data-aos="zoom-in" data-aos-duration="10000">Какие Технологии Мы Используем</p>
+        <h1  className={sHome["use2"]} data-aos="fade-down" data-aos-duration="10000">Наши технологии</h1>
         <div className={sHome["edit"]}>
           <div className={sHome["edit1"]}>
 
-          <img src={microsoft} alt="" />
-          <img src={laravel} alt="" />
-          <img src={react} alt="" />
-          <img src={vue} alt="" />
-          <img src={jquery} alt="" />
-          <img src={android} alt="" />
+          <img data-aos="flip-down" data-aos-duration="3000" src={microsoft} alt="" />
+          <img data-aos="flip-down" data-aos-duration="3000" src={laravel} alt="" />
+          <img data-aos="flip-down" data-aos-duration="3000" src={react} alt="" />
+          <img data-aos="flip-down" data-aos-duration="3000" src={vue} alt="" />
+          <img data-aos="flip-down" data-aos-duration="3000" src={jquery} alt="" />
+          <img data-aos="flip-down" data-aos-duration="3000" src={android} alt="" />
           </div>
           <div className={sHome["edit2"]}>
 
-          <img src={swift} alt="" />
-          <img src={flutter} alt="" />
-          <img src={firebase} alt="" />
-          <img src={mysql} alt="" />
-          <img src={sql} alt="" />
-          <img src={figma} alt="" />
+          <img data-aos="flip-up" data-aos-duration="3000" src={swift} alt="" />
+          <img data-aos="flip-up" data-aos-duration="3000" src={flutter} alt="" />
+          <img data-aos="flip-up" data-aos-duration="3000" src={firebase} alt="" />
+          <img data-aos="flip-up" data-aos-duration="3000" src={mysql} alt="" />
+          <img data-aos="flip-up" data-aos-duration="3000" src={sql} alt="" />
+          <img data-aos="flip-up" data-aos-duration="3000" src={figma} alt="" />
           </div>
         </div>
       </div>
     </div>
     <div className={sHome["container5"]}>
       <div className={sHome["container"]}>
-        <p className={sHome["use1"]}>Как Мы Работаем</p>
+        <p  className={sHome["use1"]}>Как Мы Работаем</p>
         <h1 className={sHome["use2"]}>Процесс работы</h1>
         <div className={sHome["procces"]}>
             {/* <Card1 text1 = "Шаг 01" text2 = "01" text3 = "Проектирование" text4 = "Сначала мы проводим предпроектное обследование и определяем границы и ограничения систем.На основании исследования и аналитического отчета составляем единый список приоритезированных задач по каждой системе."/> */}
@@ -155,9 +165,6 @@ function Homepage() {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination = {{
-          clickable : true
-        }}
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -173,7 +180,6 @@ function Homepage() {
           },
         }}
         loop = {true} 
-        modules={[Pagination]}
         className={sHome["mySwiper"]}
       >
         <SwiperSlide><Card1 text1 = "Шаг 01" text2 = "01" text3 = "Проектирование" text4 = "Сначала мы проводим предпроектное обследование и определяем границы и ограничения систем.На основании исследования и аналитического отчета составляем единый список приоритезированных задач по каждой системе."/></SwiperSlide>
@@ -193,20 +199,20 @@ function Homepage() {
     </div>
     <div className={sHome["container6"]}>
       <div className={sHome["container"]}>
-        <div className={sHome["lal1"]}>
-        <p>Нам Доверяют</p>
+        <div className={sHome["lal1"] }>
+        <p  data-aos="flip-down" data-aos-duration="3500">Нам Доверяют</p>
 
         </div>
         <div className={sHome["lal"]}>
-        <h1>Местные и мировые бренды</h1>
+        <h1    data-aos="flip-up" data-aos-duration="3500" >Местные и мировые бренды</h1>
         </div>
         <div className={sHome["brands"]}>
-            <img src={intellect} alt="" />
-            <img src={yorux} alt="" />
-            <img src={tutus} alt="" />
-            <img src={webart} alt="" />
-            <img src={go} alt="" />
-            <img src={fikir} alt="" />
+            <img data-aos="flip-right" data-aos-duration="3000"   src={intellect} alt="" />
+            <img data-aos="flip-up" data-aos-duration="3000"   src={yorux} alt="" />
+            <img data-aos="flip-left" data-aos-duration="3000"   src={tutus} alt="" />
+            <img  data-aos="flip-up" data-aos-duration="3000"   src={webart} alt="" />
+            <img data-aos="flip-right" data-aos-duration="3000"   src={go} alt="" />
+            <img  data-aos="flip-up" data-aos-duration="3000" src={fikir} alt="" />
         </div>
       </div>
     </div>
@@ -214,9 +220,13 @@ function Homepage() {
       <div className={sHome["container"]}>
         <div className={sHome["casess"]}>
           <div className={sHome["left-case"]}>
-            <h1>Последние Кейси</h1>
+            <h1 data-aos="fade-down"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">Последние Кейси</h1>
           </div>
-          <div className = {sHome["right-case"]}>
+          <div data-aos="fade-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="3000"  className = {sHome["right-case"]}>
             <p>Создание новых ярких брендов, уникальных визуальных систем и цифрового опыта, ориентированных на широкий спектр оригинальных коллабораций.</p>
           </div>
         </div>
@@ -251,12 +261,12 @@ function Homepage() {
       </div>
     </div>
     <div className={sHome["container9"]}>
-      <div className={sHome["container"]}>
+      <div className={sHome["container"]} >
         <div className={sHome["only-text"]}>
-          <p className={sHome["smallTeam"]}>Команда</p>
-          <h1>Наш козырь</h1>
-          <p className={sHome["in"]}>Наличие инхаус команда IT-специалистов и менеджеров проектов у которой есть более чем 5-летний опыт работы как в местных, так и в глобальных IT-компаниях</p>
-          <p className={sHome["know"]}>Узнайте больше </p>
+          <p data-aos="fade-right" data-aos-duration="3000" className={sHome["smallTeam"]}>Команда</p>
+          <h1 data-aos="fade-down"  data-aos-duration="3000">Наш козырь</h1>
+          <p data-aos="fade-left" data-aos-duration="3000" className={sHome["in"]}>Наличие инхаус команда IT-специалистов и менеджеров проектов у которой есть более чем 5-летний опыт работы как в местных, так и в глобальных IT-компаниях</p>
+          <p data-aos="fade-up"  data-aos-duration="3000" className={sHome["know"]}>Узнайте больше </p>
         </div>
         <div className={sHome["pink"]}>
         <img src={pink} alt="" />
@@ -266,8 +276,8 @@ function Homepage() {
     <div className={sHome["container10"]}>
       <div className={sHome["container"]}>
         <div className={sHome["sentences"]}>
-        <p>НЕДАВНИЕ ПОСТЫ</p>
-        <h1>БЛОГ</h1>
+        <p data-aos="fade-right" data-aos-duration="3000" >НЕДАВНИЕ ПОСТЫ</p>
+        <h1 data-aos="fade-right" data-aos-duration="3000" >БЛОГ</h1>
         </div>
       </div>
     </div>

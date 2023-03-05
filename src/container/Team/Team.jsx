@@ -24,14 +24,22 @@ import mirzosaid from  './mirzosaid.jpg';
 import ahmad from  './ahmad.jpg';
 import behruz from  './behruz.jpg';
 import snake from  './snake.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 function Team ()  {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (<div>
     <div className={teams["container1"]}>
       <div className={teams["container"]}>
-        <div className={teams["ourteam"]}>
-          <h1 className={teams["cat"]}>Наша команда</h1>
-          <p className={teams["dog"]}>инхаус экспертиз для разработки проектов</p>
-          <div className={teams["teachers"]}>
+        <div className={teams["ourteam"]} >
+          <h1 className={teams["cat"]}  data-aos="flip-left" data-aos-duration="2500">Наша команда</h1>
+          <p className={teams["dog"]}  data-aos="fade-left" data-aos-duration="2500">инхаус экспертиз для разработки проектов</p>
+          <div className={teams["teachers"]} data-aos="fade-down"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             <>
       <Swiper
       
@@ -57,8 +65,8 @@ function Team ()  {
         className={teams["mySwiper"]}
       >
         <SwiperSlide>
-        <div className={teams["type1"]}>
-              <img src={zohir} alt="" />
+        <div className={teams["type1"]} > 
+              <img  src={zohir} alt="" />
               <h1>Зоир Кабиров</h1>
               <p>Соучредитель, Управляющий разработчик</p>
             </div>
@@ -155,7 +163,7 @@ function Team ()  {
       <div className={teams["container"]}>
         <div className={teams["forP"]}>
 
-          <div className={teams["cir"]}>
+          <div className={teams["cir"]} data-aos="flip-left" data-aos-duration="2500">
             <p><Link to={'*'} style = {{textDecoration : "none", color:"#939393"}}>Присоединяйтесь К Нам</Link></p>
           </div>
         </div>
@@ -164,12 +172,12 @@ function Team ()  {
     <div className={teams["container3"]}>
       <div className={teams["container"]}>
         <div className={teams["some-text"]}>
-          <div className={teams["snake"]}>
+          <div  className={teams["snake"]}>
             <img src={snake} alt="" />
           </div>
           <div className={teams["text-snake"]}>
-            <h1>Ваши цифровые продукты и услуги, гарантировано нашей командой</h1>
-            <p>Более 20 сотрудников для разработки крупного проекта — уже у нас в штате. Профессионалы в аналитике, юзабилити, проектировании, дизайне, разработке, тестировании, информационной безопасности и системном администрировании работают в нашем офисе в Душанбе и Измир</p>
+            <h1 data-aos="fade-left" data-aos-duration="3000">Ваши цифровые продукты и услуги, гарантировано нашей командой</h1>
+            <p data-aos="fade-right" data-aos-duration="3000">Более 20 сотрудников для разработки крупного проекта — уже у нас в штате. Профессионалы в аналитике, юзабилити, проектировании, дизайне, разработке, тестировании, информационной безопасности и системном администрировании работают в нашем офисе в Душанбе и Измир</p>
           </div>
         </div>
       </div>
@@ -177,10 +185,10 @@ function Team ()  {
     <div className={teams["container4"]}>
       <div className={teams["container"]}>
       <div className={teams["we"]}>
-          <p className={teams["wep"]}>ХОТИТЕ РАБОТАТЬ С НАМИ?</p>
-          <h1>Мы хотели бы услышать больше о вашем проекте</h1>
-          <div className={teams["circle"]}>
-          <p><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E"}}>Давай Поговорим</Link></p>
+          <p className={teams["wep"]} data-aos="fade-up" data-aos-duration="3000">ХОТИТЕ РАБОТАТЬ С НАМИ?</p>
+          <h1 data-aos="fade-down" data-aos-duration="3200">Мы хотели бы услышать больше о вашем проекте</h1>
+          <div className={teams["circle"]} data-aos="zoom-out" data-aos-duration="3000">
+          <p data-aos="fade-down" data-aos-duration="3000"><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E"}}>Давай Поговорим</Link></p>
           </div>
         </div>
       </div>

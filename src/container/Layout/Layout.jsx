@@ -15,7 +15,7 @@ function Layout(){
             </div>
             <div className={sLayot["middle"]}>
             <ul>
-                <li><Link to={"/services"} style ={{textDecoration:"none", color:"#2F2E2E"}}>УСЛУГИ</Link></li>
+                <li ><Link to={"/services"} style ={{textDecoration:"none", color:"#2F2E2E"}}>УСЛУГИ</Link></li>
                 <li><Link to={"/cases"} style ={{textDecoration:"none", color:"#2F2E2E"}}>КЕЙСЫ</Link></li>
                 <li><Link to={"/team"} style ={{textDecoration:"none", color:"#2F2E2E"}}>КОМАНДА</Link></li>
                 <li><Link to={"/blog"} style ={{textDecoration:"none", color:"#2F2E2E"}}>БЛОГ</Link></li>
@@ -87,7 +87,8 @@ function Layout(){
         <div className={sLayot["img-s"]}>
             <img src={startUp} alt="" />
         </div>
-        </div>  
+        </div> 
+         
     </div>
     </div>)
 }

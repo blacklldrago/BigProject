@@ -98,6 +98,5 @@
 }
 .circle:hover{
     background-color: #C9F31D;
-    border: none;
-    transition: 2s;
+    border-color: #C9F31D;
 }

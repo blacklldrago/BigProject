@@ -1,17 +1,24 @@
-import serv from './Servicesstyle.module.css'
 import arrow from './arrow.png'
 import smile from './smile.png'
 import lines from './lines.png'
 import { Card3 } from '../../components/card';
+import serv from './Servicesstyle.module.css'
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 function Services (){
+  
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (<div>
-    <div className={serv["container1"]}>
+    <div className={serv["container1"]} data-aos="flip-right" data-aos-duration="1500"> 
       <div className={serv["container"]}>
         <div className={serv["business"]}>
         
           <div className={serv["text-busi"]}>  
-          <h1>Мы делаем <img src={arrow} alt="" /> ваш бизнес ярче. <img src={smile} alt="" /> </h1>
+          <h1 data-aos="flip-left" data-aos-duration="1500" > Мы делаем <img src={arrow} alt="" /> ваш бизнес ярче. <img src={smile} alt="" /> </h1>
           </div>
           <div className={serv["lines"]}>
             <img src={lines} alt="" />
@@ -20,11 +27,11 @@ function Services (){
         </div>
         <div className={serv["something"]}>
           <div className={serv["left-s"]}>
-            <p>Услуги------</p>
+            <p data-aos="flip-left" data-aos-duration="1500">Услуги------</p>
           </div>
           <div className={serv["right-s"]}>
 
-          <p>Создание новых ярких брендов, уникальных визуальных систем и цифрового опыта, ориентированных на широкий спектр оригинальных коллабораций.</p>
+          <p data-aos="fade-up" data-aos-duration="1500">Создание новых ярких брендов, уникальных визуальных систем и цифрового опыта, ориентированных на широкий спектр оригинальных коллабораций.</p>
           </div>
         </div>
       </div>
@@ -62,11 +69,16 @@ function Services (){
     <div className={serv["container3"]}>
       <div className={serv["container"]}>
         <div className={serv["we"]}>
-          <p className={serv["wep"]}>ХОТИТЕ РАБОТАТЬ С НАМИ?</p>
-          <h1>Мы хотели бы услышать больше о вашем проекте</h1>
+          <p data-aos="fade-down"  data-aos-duration="1500"
+     data-aos-anchor-placement="top-bottom" className={serv["wep"]}>ХОТИТЕ РАБОТАТЬ С НАМИ?</p>
+          <h1 data-aos="fade-down"  data-aos-duration="1500"
+     data-aos-anchor-placement="top-bottom" >Мы хотели бы услышать больше о вашем проекте</h1>
+      <div className="animate__animated animate__wobble animate__slower 10s"b  style={{width:"20%", margin:"auto"}}>
+
           <div className={serv["circle"]}>
           <p><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E"}}>Давай Поговорим</Link></p>
           </div>
+      </div>
         </div>
       </div>
     </div>

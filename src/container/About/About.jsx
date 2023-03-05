@@ -37,20 +37,26 @@ import webart from  './webart.png';
 import tutus from  './tutus.png';
 import go from  './go.png';
 import fikir from  './fikir.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 function About (){
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const src = "https://it.softclub.tj/front/video/Open-Day-at-Softclub-IT-Academy-muted.webm"
   const video2 = "https://it.softclub.tj/front/video/Softclub-Ad-muted.webm"
   return (<div>
       <div className={ab["container1"]}>
         <div className={ab["container"]}>
           <div className={ab["big"]}>
-            <h1>О нас­ и­ нашей­ растущей­ команде</h1>
+            <h1 data-aos="fade-left" data-aos-duration="3000">О нас­ и­ нашей­ растущей­ команде</h1>
             <div className={ab["ser"]}>
               <div className={ab["cer"]}>
-              <p> <Link to={"/services"} style = {{textDecoration:"none", color:"#555555"}} >Услуги & Технологии</Link> </p>
+              <p data-aos="flip-left" data-aos-duration="3000"> <Link to={"/services"} style = {{textDecoration:"none", color:"#555555"}} >Услуги & Технологии</Link> </p>
               </div>
               <div className={ab["motiv"]}>
-                <p>Мы команда способных разработчиков, приоритетом которых является качество.</p>
+                <p data-aos="flip-right" data-aos-duration="3000">Мы команда способных разработчиков, приоритетом которых является качество.</p>
               </div>
             </div>
           </div>
@@ -73,10 +79,10 @@ function About (){
         <div className={ab["container"]}>
           <div className={ab["soft"]}>
             <div className={ab["left-soft"]}>
-              <p>Softclub IT</p>
-              <h1>О нас</h1>
+              <p data-aos="fade-left" data-aos-duration="2500">Softclub IT</p>
+              <h1 data-aos="fade-left" data-aos-duration="2500">О нас</h1>
             </div>
-            <div className={ab["right-soft"]}>
+            <div className={ab["right-soft"]} data-aos="zoom-out" data-aos-duration="2500">
               <p> <span style = {{fontWeight:"600"}}>Softclub IT</span>— это <span style = {{fontWeight:"600"}}>IT</span>-компания, у которой есть собственная академия, в которой более <span style = {{fontWeight:"600"}}>100</span> студентов готовятся стать <span style = {{fontWeight:"600"}}>IT</span>-разработчиками следующего поколения. Наши выпускники уже работают над различными проектами в известных местных компаниях, таких как <span style = {{fontWeight:"600"}}>Alif, VatanICT, EDonish</span> и др.</p>
               <p><span style = {{fontWeight:"600"}}>Softclub IT</span> имеет более чем годовой опыт работы в сфере <span style = {{fontWeight:"600"}}>IT</span> в Таджикистане и имеет разработчиков с более чем <span style = {{fontWeight:"600"}}>5</span>-летним опытом работы в различных зарубежных странах и компаниях с <span style = {{fontWeight:"600"}}>2012</span> года.</p>
               <p>Наши разработчики имеют опыт работы с передовыми веб и мобильными технологиями в разных странах, таких как Турция, Казахстан, Германия, Швеция, Литва, Китай и Норвегия.</p>
@@ -89,12 +95,12 @@ function About (){
           <div className={ab["st"]}>
             <div className={ab["my"]}>
 
-            <img className={ab["j"]} src={foto1} alt=""/>
-            <img src={foto2} alt=""/>
+            <img data-aos="fade-up" data-aos-duration="3000" className={ab["j"]} src={foto1} alt=""/>
+            <img data-aos="fade-down" data-aos-duration="3000" src={foto2} alt=""/>
             </div>
             <div className={ab["dis"]}>
-                <img className={ab["top"]} src={foto3} alt="" />
-                <img className={ab["b"]} src={foto4} alt="" />
+                <img data-aos="flip-up" data-aos-duration="2500" className={ab["top"]} src={foto3} alt="" />
+                <img data-aos="flip-down" data-aos-duration="2500" className={ab["b"]} src={foto4} alt="" />
             </div>
           </div>
         </div>
@@ -102,8 +108,8 @@ function About (){
       <div className={ab["container4"]}>
       <div className={ab["container"]}>
         <div className={ab["ourteam"]}>
-          <p className={ab["dog"]}>Кто Мы?</p>
-          <h1 className={ab["cat"]}>Наша команда</h1>
+          <p className={ab["dog"]} data-aos="fade-down" data-aos-duration="2500">Кто Мы?</p>
+          <h1 className={ab["cat"]} data-aos="fade-down" data-aos-duration="2500">Наша команда</h1>
           <div className={ab["teachers"]}>
             <>
       <Swiper
@@ -227,19 +233,19 @@ function About (){
       <div className={ab["container5"]}>
       <div className={ab["container"]}>
         <div className={ab["lal1"]}>
-        <p>Нам Доверяют</p>
+        <p  data-aos="fade-down" data-aos-duration="2500">Нам Доверяют</p>
 
         </div>
         <div className={ab["lal"]}>
-        <h1>Местные и мировые бренды</h1>
+        <h1  data-aos="fade-up" data-aos-duration="2500" >Местные и мировые бренды</h1>
         </div>
         <div className={ab["brands"]}>
-            <img src={intellect} alt="" />
-            <img src={yorux} alt="" />
-            <img src={tutus} alt="" />
-            <img src={webart} alt="" />
-            <img src={go} alt="" />
-            <img src={fikir} alt="" />
+            <img data-aos="flip-down" data-aos-duration="2500" src={intellect} alt="" />
+            <img data-aos="flip-left" data-aos-duration="2500" src={yorux} alt="" />
+            <img data-aos="fade-down" data-aos-duration="2500" src={tutus} alt="" />
+            <img data-aos="flip-right" data-aos-duration="2500" src={webart} alt="" />
+            <img data-aos="fade-down" data-aos-duration="2500" src={go} alt="" />
+            <img data-aos="flip-up" data-aos-duration="2500" src={fikir} alt="" />
         </div>
       </div>
       </div>
@@ -247,7 +253,7 @@ function About (){
       <div className={ab["container"]}>
       <div className={ab["total"]}>
         <div className={ab["vidddik"]}>
-        <video width="100%" loop muted autoPlay="autoplay" >
+        <video data-aos="flip-right" data-aos-duration="2800" width="100%" loop muted autoPlay="autoplay" >
           <source src={video2} type="video/webm" />
               Sorry, your browser doesn't support embedded videos.
           </video>
