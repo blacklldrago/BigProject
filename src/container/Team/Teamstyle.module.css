@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.ourteam{
+    padding-top: 40px;
+}
+.cat{
+    line-height: 0.9;
+    font-size: 120px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+    width: 20%;
+    margin: auto;
+}
+.container1{
+    padding-bottom: 30px;
+}
+.dog{
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: gray;
+    
+    width: 20%;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 23px;
+}
+.teachers{
+    position: relative;
+    z-index: 0;
+}
+.type1 img, .type2 img{
+    width: 427px;
+    height: 543px;
+}
+.type1 h1, .type2 h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    padding-top: 20px;
+}
+.type1 p, .type2 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    padding-top: 5px;
+} 
+.type2{
+    margin-top: 80px;
+}
+.type1, .type2{
+    padding-bottom: 100px;
+}
+.mySwiper{
+    cursor: pointer;
+}
+/* .container2 */
+.container2{
+    background-color: #121212;
+    text-align: center;
+    padding: 300px 0px;
+}
+.cir{
+    display: flex;
+    justify-content: center;
+    width: 342px;
+    height: 342px;
+    border: 1px solid #939393;
+    border-radius: 100%;
+}
+.cir:hover{
+    background-color: #C9F31D;
+    color: black;
+    transition: 2s;
+    cursor: pointer;
+}
+.cir p{
+    color: #939393;
+    padding-top: 130px;
+    font-size: 20px;
+    width: 150px;
+}
+.forP{
+    width: 20%;
+    margin: auto;
+}
+.text-snake h1{
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1;
+    color: black;
+    width: 686px;
+    margin-bottom: 20px;
+}
+.some-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+.text-snake p{
+    width: 686px;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #555555;
+}
+
+/* //// */
+.container4{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.circle{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+}
+.circle p{
+    padding-top: 70px;
+}
+.we h1{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1;
+    color: black;
+    width: 600px;
+    margin: 25px auto;
+}
+.wep{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    color: gray;
+    border: 1px solid gray;
+    padding: 5px 17px;
+    border-radius: 50px;
+    width: 200px;
+    margin: auto;
+}
+.we{
+    cursor: pointer;
+}
+.circle:hover{
+    background-color: #C9F31D;
+    transition: 2s;
+    border: none;
+}
