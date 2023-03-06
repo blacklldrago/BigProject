@@ -247,7 +247,19 @@
     margin-bottom: 20px;
     font-size: 30px;
 }
-
+.part3 input{
+    height: 50px;
+    width: 200px;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+.firstM{
+    margin-bottom: 20px;
+}
+.secondM{
+    margin-top: 30px;
+}
 @media only screen and (min-width: 360px ) and (max-width: 599px) {
 
     .middle{
@@ -278,6 +290,9 @@
         left: 100px;
         top: 10px;
     }
+    .mainM{
+        flex-wrap: wrap;
+    }
     
 } 
 
@@ -305,5 +320,8 @@
     .inputs, input{
         padding-left: 50px;
         width: 700px;
+    }
+    .mainM{
+        flex-wrap: wrap;
     }
 }

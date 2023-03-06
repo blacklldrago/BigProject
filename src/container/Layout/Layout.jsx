@@ -5,7 +5,6 @@ import search from "./search.png";
 import startUp from "./startUp.png";
 import menu from "./menu.png";
 import blacklogo from "./blacklogo.png";
-import AppsIcon from '@mui/icons-material/Apps';
 import { useState } from "react";
 
 function Layout() {
@@ -90,20 +89,20 @@ function Layout() {
                     
                   <div className={sLayot["firstM"]}>
                     <ul>
-                      <li> <Link 
+                      <li  onClick={handleClick}> <Link 
                         style={{ textDecoration: "none", color: "gray" }} to={"https://www.instagram.com/softclub.tj/"}>Instagram</Link> </li>
-                      <li> <Link 
+                      <li  onClick={handleClick}> <Link 
                         style={{ textDecoration: "none", color: "gray" }} to={"https://www.instagram.com/softclub.tj/"}>YouTube</Link> </li>
-                      <li> <Link 
+                      <li  onClick={handleClick}> <Link 
                         style={{ textDecoration: "none", color: "gray" }} to={"https://www.instagram.com/softclub.tj/"}>Github</Link> </li>
                     </ul>
                   </div>
                     <div className={sLayot["middleM"]}>
-                      <img src={blacklogo} alt="" />
+                      <Link to={"/"}><img  onClick={handleClick} style={{cursor:"pointer"}} src={blacklogo} alt="" /></Link>
                     </div>
                   <div className={sLayot["secondM"]}>
                   <ul>
-                    <li>
+                    <li  onClick={handleClick}>
                       <Link
                         to={"/about"}
                         style={{ textDecoration: "none", color: "gray" }}
@@ -111,7 +110,7 @@ function Layout() {
                         О Нас
                       </Link>
                     </li>
-                    <li>
+                    <li  onClick={handleClick}>
                       <Link
                         to={"*"}
                         style={{ textDecoration: "none", color: "gray" }}
@@ -119,7 +118,7 @@ function Layout() {
                         Карьера
                       </Link>
                     </li>
-                    <li>
+                    <li  onClick={handleClick}>
                       <Link
                         to={"/contacts"}
                         style={{ textDecoration: "none", color: "gray" }}
@@ -127,7 +126,7 @@ function Layout() {
                         Контакты
                       </Link>
                     </li>
-                    <li>
+                    <li  onClick={handleClick}>
                       <Link
                         to={"*"}
                         style={{ textDecoration: "none", color: "gray" }}
@@ -140,50 +139,50 @@ function Layout() {
                   </div>
                   <div className={sLayot["part2"]}>
                   <ul>
-              <li>
+              <li  onClick={handleClick}>
                 <Link
                   to={"/services"}
-                  style={{ textDecoration: "none", color: "#2F2E2E" }}
+                  style={{ textDecoration: "none", color: "gray" }}
                 >
                   УСЛУГИ
                 </Link>
               </li>
-              <li>
+              <li  onClick={handleClick}>
                 <Link
                   to={"/cases"}
-                  style={{ textDecoration: "none", color: "#2F2E2E" }}
+                  style={{ textDecoration: "none", color: "gray" }}
                 >
                   КЕЙСЫ
                 </Link>
               </li>
-              <li>
+              <li  onClick={handleClick}>
                 <Link
                   to={"/team"}
-                  style={{ textDecoration: "none", color: "#2F2E2E" }}
+                  style={{ textDecoration: "none", color: "gray" }}
                 >
                   КОМАНДА
                 </Link>
               </li>
-              <li>
+              <li  onClick={handleClick}>
                 <Link
                   to={"/blog"}
-                  style={{ textDecoration: "none", color: "#2F2E2E" }}
+                  style={{ textDecoration: "none", color: "gray" }}
                 >
                   БЛОГ
                 </Link>
               </li>
-              <li>
+              <li  onClick={handleClick}>
                 <Link
                   to={"/about"}
-                  style={{ textDecoration: "none", color: "#2F2E2E" }}
+                  style={{ textDecoration: "none", color: "gray" }}
                 >
                   О НАС
                 </Link>
               </li>
-              <li>
+              <li  onClick={handleClick}>
                 <Link
                   to={"/contacts"}
-                  style={{ textDecoration: "none", color: "#2F2E2E" }}
+                  style={{ textDecoration: "none", color: "gray" }}
                 >
                   КОНТАКТЫ
                 </Link>
