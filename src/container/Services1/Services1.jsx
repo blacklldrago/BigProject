@@ -76,7 +76,7 @@ function Services (){
       <div className="animate__animated animate__wobble animate__slower 10s"b  style={{width:"20%", margin:"auto"}}>
 
           <div className={serv["circle"]}>
-          <p><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E"}}>Давай Поговорим</Link></p>
+          <p><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E", fontSize:"23px"}}>Давай Поговорим</Link></p>
           </div>
       </div>
         </div>

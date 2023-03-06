@@ -162,8 +162,8 @@
     line-height: 1.3;
     text-transform: capitalize;
     color: #999999;
-    padding-top: 67px;
-    width: 80px;
+    padding-top: 60px;
+    width: 120px;
     margin: auto;
 }
 .connect{
@@ -173,6 +173,11 @@
     border: 1px solid #999999;
     margin: 20px auto;
     border-radius: 100%;
+}
+.connect:hover{
+    
+    background-color: #C9F31D;
+    border-color: #C9F31D;
 }
 .inputs input{
     font-weight: 400;
@@ -184,7 +189,18 @@
     border: none;
     border-radius: 0;
     outline: none;
-    padding: 21px 50px 21px 15px;
+    width: 350px;
+    height: 60px;
+    padding-left: 10px;
+}
+.inputs2 button{
+    margin-left: 20px;
+    width: 100px;
+    height: 58px;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-right: 20px;
 }
 .main-footer{
     display: flex;
@@ -196,4 +212,98 @@
 }
 .footer1{
     margin-top: 260px;
+}
+
+
+.black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.iksak{
+    cursor: pointer;
+    float: right;
+    font-size: 50px;
+    background-color: #232323;
+    color: white;
+    margin: 10px;
+    padding: 0px 23px;
+    border-radius: 50%;
+}
+
+
+.mainM{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding-top: 100px;
+    overflow: hidden;
+}
+.mainM ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+@media only screen and (min-width: 360px ) and (max-width: 599px) {
+
+    .middle{
+        display: none;
+    }
+    .main-footer img{
+        display: none;
+    }
+    .inputs{
+        width: 417px;
+        flex-wrap: wrap;
+    }
+    .footer, .want{
+        width: 413px;
+    }
+    .footer1, .left-footer{
+        flex-wrap: wrap;
+    }
+    .firstOne, .secondOne, .thirdOne{
+        margin-top: 50px;
+    }
+    .inputs, input{
+        padding-left: 50px;
+        width: 300px;
+    }
+    .inputs button{
+        position: relative;
+        left: 100px;
+        top: 10px;
+    }
+    
+} 
+
+@media only screen and (min-width: 600px ) and (max-width: 1280px) {
+    .middle{
+        display: none;
+    }
+    .main-footer img{
+        display: none;
+    }
+    .inputs{
+        width: 417px;
+        flex-wrap: wrap;
+    }
+    .footer, .want{
+        width: 769px;
+    }
+    .footer1, .left-footer{
+        
+        flex-wrap: wrap;
+    }
+    .firstOne, .secondOne, .thirdOne{
+        margin-top: 50px;
+    }
+    .inputs, input{
+        padding-left: 50px;
+        width: 700px;
+    }
 }

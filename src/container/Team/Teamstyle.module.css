@@ -87,7 +87,7 @@
     color: #939393;
     padding-top: 130px;
     font-size: 20px;
-    width: 150px;
+    width: 230px;
 }
 .forP{
     width: 20%;
@@ -131,7 +131,7 @@
     margin: auto;
 }
 .circle p{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .we h1{
     font-weight: 400;
@@ -160,4 +160,143 @@
     background-color: #C9F31D;
     border-color: #C9F31D;
     transition: 2s;
+}
+@media only screen and (min-width: 360px ) and (max-width: 599px) {
+    .cat{
+            
+    line-height: 0.9;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 200px;
+    }
+    .dog{
+        width: 200px;
+    }
+    .mySwiper{
+        flex-direction: column;
+    }
+    .mySwiper img{
+        width: 440px;
+    }
+    .type2{
+        margin-top: 0px;
+    }
+    .type1, .type2{
+        padding-bottom: 0px;
+    }
+    .type1{
+        padding-right: 20px;
+    }
+    .cir{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        border: 1px solid #939393;
+        border-radius: 100%;
+    }
+    .cir p{
+        color: #939393;
+        padding-top: 130px;
+        font-size: 20px;
+        width: 230px;
+    }
+    .forP{
+        width: 80%;
+        margin: auto;
+    }
+    .some-text{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .some-text img{
+        width: 300px;
+    }
+    .text-snake h1{
+        font-size: 20px;
+        width: 300px;
+        margin: 20px 0px;
+    }
+    .text-snake p{
+        font-size: 20px;
+        width: 300px;
+        margin: auto;
+    }
+        
+    .we h1{
+        text-align: center;
+        font-size: 30px;
+        width: 310px;
+    }
+}
+@media only screen and (min-width: 600px ) and (max-width: 1280px) {
+    .cat{
+            
+        line-height: 0.9;
+        font-size: 60px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        width: 200px;
+        }
+        .dog{
+            width: 200px;
+        }
+        .mySwiper{
+            flex-direction: column;
+        }
+        .mySwiper img{
+            width: 440px;
+        }
+        .type2{
+            margin-top: 0px;
+        }
+        .type1, .type2{
+            padding-bottom: 0px;
+        }
+        .type1{
+            padding-right: 20px;
+        }
+        .cir{
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #939393;
+            border-radius: 100%;
+        }
+        .cir p{
+            color: #939393;
+            padding-top: 130px;
+            font-size: 20px;
+            width: 230px;
+        }
+        .forP{
+            width: 40%;
+            margin: auto;
+        }
+        .some-text{
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .some-text img{
+            width: 400px;
+        }
+        .text-snake h1{
+            font-size: 25px;
+            width: 500px;
+            margin: 20px 0px;
+        }
+        .text-snake p{
+            font-size: 25px;
+            width: 500px;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+            
+        .we h1{
+            text-align: center;
+            font-size: 30px;
+            width: 500px;
+        }
 }

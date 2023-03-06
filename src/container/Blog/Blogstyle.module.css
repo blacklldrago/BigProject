@@ -41,7 +41,7 @@
     margin: auto;
 }
 .circle p{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .we h1{
     font-weight: 400;
@@ -69,4 +69,70 @@
     
     background-color: #C9F31D;
     border-color: #C9F31D;
+}
+@media only screen and (min-width: 360px ) and (max-width: 599px) {
+
+    .think{
+        flex-wrap: wrap;
+    }
+    .we h1{
+        text-align: center;
+        font-size: 30px;
+        width: 500px;
+        margin-left: 20px;
+
+    }
+    .left-think h1{
+        font-size: 60px;
+        width: 500px;
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+    .right-think p{
+        
+        margin-left: 150px;
+    }
+    .wep{
+        width: 300px;
+        margin-left: 90px;
+    }
+    .circle{
+        position: relative;
+        left: 70px;
+    }
+    
+    .container1{
+        margin-bottom: -100px;
+    }
+}
+@media only screen and (min-width: 600px ) and (max-width: 1280px) {
+    .think{
+        flex-wrap: wrap;
+    }
+    .we h1{
+        text-align: center;
+        font-size: 30px;
+        width: 500px;
+        margin-left: 20px;
+
+    }
+    .left-think h1{
+        font-size: 60px;
+        width: 500px;
+        margin-bottom: 20px;
+        
+    }
+    .container1{
+        margin-bottom: -100px;
+    }
+    .wep{
+        width: 300px;
+        margin: auto;
+    }
+    .we h1{
+        margin: 50px auto;
+    }
+    .container1{
+        padding-bottom: -100px;
+    }
 }

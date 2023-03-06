@@ -48,12 +48,17 @@ function Team ()  {
         freeMode={true}
         loop = {true}
         breakpoints={{
+          360:{
+            
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 40,
           },
           1024: {
@@ -164,7 +169,7 @@ function Team ()  {
         <div className={teams["forP"]}>
 
           <div className={teams["cir"]} data-aos="flip-left" data-aos-duration="2500">
-            <p><Link to={'*'} style = {{textDecoration : "none", color:"#939393"}}>Присоединяйтесь К Нам</Link></p>
+            <p><Link to={'*'} style = {{textDecoration : "none", color:"#939393", fontSize:"30px"}}>Присоединяйтесь К Нам</Link></p>
           </div>
         </div>
       </div>
@@ -188,7 +193,7 @@ function Team ()  {
           <p className={teams["wep"]} data-aos="fade-up" data-aos-duration="3000">ХОТИТЕ РАБОТАТЬ С НАМИ?</p>
           <h1 data-aos="fade-down" data-aos-duration="3200">Мы хотели бы услышать больше о вашем проекте</h1>
           <div className={teams["circle"]} data-aos="zoom-out" data-aos-duration="3000">
-          <p data-aos="fade-down" data-aos-duration="3000"><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E"}}>Давай Поговорим</Link></p>
+          <p data-aos="fade-down" data-aos-duration="3000"><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E", fontSize:"23px"}}>Давай Поговорим</Link></p>
           </div>
         </div>
       </div>

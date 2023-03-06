@@ -39,9 +39,7 @@
     justify-content: center;
     gap: 100px;
 }
-.container2{
-    padding-bottom: 250px;
-}
+
 .prp{
     
     background-color: #F8F8F8;
@@ -72,7 +70,7 @@
     margin: auto;
 }
 .circle p{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .we h1{
     font-weight: 400;
@@ -99,4 +97,77 @@
 .circle:hover{
     background-color: #C9F31D;
     border-color: #C9F31D;
+}
+@media only screen and (min-width: 360px ) and (max-width: 599px) {
+    .lines{
+        display: none;
+    }
+    .business h1{
+        font-weight: 500;
+        font-size: 48px;
+        width: 315px;
+        line-height: 1;
+        color: black;
+        margin-top: 40px;
+    }
+    .business img{
+        width: 50px;
+    }
+    .container2{
+        margin-bottom: 1000px;
+    }
+    .prp{
+        flex-wrap: wrap;
+        background-color: none;
+    }
+    .left-s{
+        display: none;
+    }
+    .we h1{
+        text-align: center;
+        font-size: 30px;
+        width: 310px;
+    }
+    .circle{
+        position: relative;
+        right: 50px;
+    }
+}
+@media only screen and (min-width: 600px ) and (max-width: 1280px) {
+    body{
+        overflow-x: hidden;
+    }
+    .lines{
+        display: none;
+    }
+    .business h1{
+        font-weight: 500;
+        font-size: 48px;
+        width: 315px;
+        line-height: 1;
+        color: black;
+        margin-top: 40px;
+    }
+    .business img{
+        width: 50px;
+    }
+    .container2{
+        margin-bottom: 1000px;
+    }
+    .prp{
+        flex-wrap: wrap;
+        background-color: none;
+    }
+    .left-s{
+        display: none;
+    }
+    .we h1{
+        text-align: center;
+        font-size: 30px;
+        width: 310px;
+    }
+    .circle{
+        position: relative;
+        right: 30px;
+    }
 }

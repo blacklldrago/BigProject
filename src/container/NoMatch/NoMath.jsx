@@ -16,7 +16,7 @@ function NoMath (){
     </div>
     <div className={nos["container2"]} data-aos="fade-left" data-aos-duration="3000">
       <div className={nos["cirr"]}>
-        <Link to='/' style={{textDecoration:"none", color:"#555555"}}>
+        <Link to='/' style={{textDecoration:"none", color:"#555555", fontSize:"23px"}}>
         <p>Вернуться На Главную</p></Link>
 
       </div>

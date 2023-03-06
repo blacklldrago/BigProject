@@ -20,7 +20,7 @@ function Cases(){
     AOS.init();
   }, [])
   return (<div>
-    <div className={cs["container1"]} data-aos="flip-left" data-aos-duration="1500">
+    <div className={cs["container1"]}>
       <div className={cs["container"]}>
         <div className={cs["work"]} data-aos="fade-up" data-aos-duration="1500">
           <div className={cs["work1"]}>
@@ -68,13 +68,14 @@ function Cases(){
         </div>
       </div>
     </div>
-    <div className={cs["container3"]}>
+    <div className={cs["container3"]}> 
       <div className={cs["container"]}>
+
       <div className={cs["we"]}>
           <p data-aos="fade-right" data-aos-duration="2500" className={cs["wep"]}>ХОТИТЕ РАБОТАТЬ С НАМИ?</p>
           <h1 data-aos="fade-left" data-aos-duration="2500">Мы хотели бы услышать больше о вашем проекте</h1>
           <div className={cs["circle"]}>
-          <p className='animate__animated animate__lightSpeedInRight animate__infinite'><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E"}}>Давай Поговорим</Link></p>
+          <p className='animate__animated animate__lightSpeedInRight animate__slow 10s'><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E",  fontSize:"23px"}}>Давай Поговорим</Link></p>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ function Blog(){
           <p className={sl["wep"]} data-aos="fade-down" data-aos-duration="2500">ХОТИТЕ РАБОТАТЬ С НАМИ?</p>
           <h1 data-aos="fade-up" data-aos-duration="2500">Мы хотели бы услышать больше о вашем проекте</h1>
           <div className={sl["circle"]}>
-          <p data-aos="fade-left" data-aos-duration="2500"><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E"}}>Давай Поговорим</Link></p>
+          <p data-aos="fade-left" data-aos-duration="2500"><Link to={"/contacts"} style ={{textDecoration:"none", color:"#2F2E2E", fontSize:"23px"}}>Давай Поговорим</Link></p>
           </div>
         </div>
       </div>

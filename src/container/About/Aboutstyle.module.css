@@ -185,6 +185,13 @@
     padding: 35px 20px 35px 20px;
     border:1px solid #999999 ;
 }
+.brands img{
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.brands img:hover{
+    filter: grayscale(0%);
+}
 .container5{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -240,4 +247,174 @@
     top: 270px;
     z-index: 0;
     background-color: white;
+}
+@media only screen and (min-width: 360px ) and (max-width: 599px) {
+    .container1 h1{
+        font-size: 50px;
+        width: 200px;
+    }
+    .vid video{
+        width: 408px;
+        height: 400px;
+        padding-left: 20px;
+    }
+    .ser{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container1{
+        padding-bottom: -100px;
+    }
+    .move-it{
+        width: 5px;
+        margin: auto;
+        position: relative;
+        left: 20px;
+        bottom: 107px;
+    }
+    .right-soft{
+        width: 300px;
+    }
+    .soft{
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .left-soft p{
+        display: none;
+    }
+    .st, .my, .dis{
+        flex-wrap: wrap;
+    }
+    .lal h1{
+        font-size: 20px;
+    }
+    .st img{
+        width: 350px;
+        padding-left: 40px;
+    }
+    .teachers img{
+        padding-left: 20px;
+        width: 400px;
+    }
+    .teachers p, .teachers h1{
+        padding-left: 20px;
+    }
+    .vidddik{
+        
+    width: 500px;
+    height: 300px;
+    }
+    .sider{
+    
+    cursor: pointer;
+    width: 500px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
+    background-color: white;
+    }
+    .motiv{
+        display: none;
+    }
+    .container4{
+        background-color: white;
+        color: black;
+    }
+    .total{
+        flex-direction: column;
+    }
+    .vidddik{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 600px ) and (max-width: 1280px) {
+    .container1 h1{
+        font-size: 50px;
+        width: 200px;
+    }
+    .vid video{
+        width: 758px;
+        height: 700px;
+        padding-left: 20px;
+    }
+    .ser{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container1{
+        padding-bottom: -100px;
+    }
+    .move-it{
+        width: 5px;
+        margin: auto;
+        position: relative;
+        left: 100px;
+        bottom: 140px;
+    }
+    .right-soft{
+        width: 300px;
+    }
+    .soft{
+        flex-wrap: wrap;
+        padding-left: 0px;
+    }
+    .left-soft p{
+        display: none;
+    }
+    .st, .my, .dis{
+        flex-direction: column;
+    }
+    .lal h1{
+        font-size: 20px;
+    }
+    .st img{
+        width: 350px;
+        padding-left: 40px;
+    }
+    .teachers img{
+        padding-left: 20px;
+        width: 400px;
+    }
+    .teachers p, .teachers h1{
+        padding-left: 20px;
+    }
+    .vidddik{
+        
+    width: 500px;
+    height: 300px;
+    }
+    .sider{
+    
+    cursor: pointer;
+    width: 700px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
+    background-color: white;
+    }
+    .total{
+        flex-direction: column;
+    }
+    .motiv{
+        display: none;
+    }
+    .container4{
+        background-color: white;
+        color: black;
+    }
+    .my{
+        display: none;
+    }
+    .teachers img{
+        width: 500px;
+    }
+    .teachers img{
+        padding-left: 140px;
+    }
+    .teachers h1, .teachers p{
+        padding-left: 140px;
+    }
 }

@@ -109,9 +109,65 @@ textarea::placeholder , input::placeholder {
     cursor: pointer;
 }
 .last-circle p{
-    padding-top: 60px;
+    padding-top: 50px;
     color: #555555;
 }
 .total-inp{
     padding-bottom: 100px;
+}
+@media only screen and (min-width: 360px ) and (max-width: 599px) {
+    .contacting{
+        flex-wrap: wrap;
+    }
+    .left-con h1{
+        width: 300px;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .right-con p{
+        width: 300px;
+        margin-left: 20px;
+    }
+    .total-inp input, textarea{ 
+        width: 300px;
+        display: block;
+    }   
+    .left-inp{
+        margin-bottom: 20px;
+    }
+    .total-inp{
+        flex-wrap: wrap;
+    }
+    .finished{
+        width: 40%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 600px ) and (max-width: 1280px) {
+    .contacting{
+        flex-wrap: wrap;
+    }
+    .left-con h1{
+        width: 300px;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .right-con p{
+        width: 300px;
+        margin-left: 20px;
+    }
+    .total-inp input, textarea{ 
+        width: 300px;
+        display: block;
+    }   
+    .left-inp{
+        margin-bottom: 20px;
+    }
+    .total-inp{
+        flex-wrap: wrap;
+    }
+    .finished{
+        width: 40%;
+        margin: auto;
+    }   
 }

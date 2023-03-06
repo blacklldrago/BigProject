@@ -114,21 +114,26 @@ function About (){
             <>
       <Swiper
       
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={30}
         freeMode={true}
         loop = {true}
         breakpoints={{
+          360:{
+              
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 50,
           },
         }}
@@ -267,17 +272,22 @@ function About (){
         disableOnInteraction: false,
       }}
       breakpoints={{
+        360:{
+            
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
         640: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 0,
         },
         768: {
           slidesPerView: 1,
-          spaceBetween: 40,
+          spaceBetween: 0,
         },
         1024: {
           slidesPerView: 1,
-          spaceBetween: 50,
+          spaceBetween: 0,
         },
       }}
       modules={[Autoplay]}
@@ -294,6 +304,7 @@ function About (){
           text3="Расул Сафарович"
           text4="Соучредитель, Softclub IT"
           /></SwiperSlide>
+          
         <SwiperSlide><Card5 imgUrl = {exp}
           text1="Развивайте свой бизнес вместе с нами"
           text2="Мы были там в самом начале, когда концепция поисковой оптимизации вступила в силу и заполнила Интернет."

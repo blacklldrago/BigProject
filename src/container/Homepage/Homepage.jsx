@@ -43,6 +43,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Homepagestyle.module.css';
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { style } from '@mui/system/Stack/createStack';
 // swioer
 
 function Homepage() {
@@ -52,7 +53,7 @@ function Homepage() {
   }, [])
 
   return(<div>
-    <div sHome={["container1"]}>
+    <div className={sHome["container1"]}>
       <div className={sHome["container"]}>
         <div className={sHome["large-text"]}>
           <div className={sHome["large-text1"]}>
@@ -90,7 +91,7 @@ function Homepage() {
                 <p data-aos="flip-right"
      data-aos-duration="3000"> Мы работаем в сфере IT уже несколько лет и теперь хотим перенести наш опыт в ваш бизнес. С 2012 года наша команда работает с локальными и глобальными клиентами.</p>
                 <div className={sHome["circle"]} data-aos="flip-down"  data-aos-duration="3000" >
-                  <h1 className='animate__animated animate__bounceInDown'><Link to = "/about"style={{textDecoration:"none", color:"white"}} >О НАС</Link></h1>
+                  <h1 className='animate__animated animate__bounceInDown'><Link to = "/about"style={{textDecoration:"none", color:"white", fontSize:"47px", }} >О НАС</Link></h1>
                 </div>
                 </div>
             </div>
@@ -237,6 +238,7 @@ function Homepage() {
         <div className={sHome["reklam"]}>
         <>
       <Swiper
+      
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -245,6 +247,20 @@ function Homepage() {
           disableOnInteraction: false,
         }}
         loop = {true}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+        }}
         modules={[Autoplay]}
         className="mySwiper"
       >
@@ -265,8 +281,8 @@ function Homepage() {
         <div className={sHome["only-text"]}>
           <p data-aos="fade-right" data-aos-duration="3000" className={sHome["smallTeam"]}>Команда</p>
           <h1 data-aos="fade-down"  data-aos-duration="3000">Наш козырь</h1>
-          <p data-aos="fade-left" data-aos-duration="3000" className={sHome["in"]}>Наличие инхаус команда IT-специалистов и менеджеров проектов у которой есть более чем 5-летний опыт работы как в местных, так и в глобальных IT-компаниях</p>
-          <p data-aos="fade-up"  data-aos-duration="3000" className={sHome["know"]}>Узнайте больше </p>
+          <p  data-aos="fade-left" data-aos-duration="3000" className={sHome["in"]}>Наличие инхаус команда IT-специалистов и менеджеров проектов у которой есть более чем 5-летний опыт работы как в местных, так и в глобальных IT-компаниях</p>
+          <p data-aos="fade-up"  data-aos-duration="3000" className={sHome["know"]}><Link to={"/team"} style={{color:"white", width:"150px", fontWeight:"500", lineHeight:"1.5"}} >Узнайте больше</Link></p>
         </div>
         <div className={sHome["pink"]}>
         <img src={pink} alt="" />

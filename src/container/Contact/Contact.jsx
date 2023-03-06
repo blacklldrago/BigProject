@@ -47,7 +47,7 @@ function Contact(){
         <div className={ct["finished"]} data-aos="fade-up" data-aos-duration="3000">
 
         <div className={ct["last-circle"]}>
-          <Link to={"*"} style = {{color:"#555555", textDecoration:"none"}}><p>Отправить Сообщения</p></Link>
+          <Link to={"*"} style = {{color:"#555555", textDecoration:"none", fontSize:"23px"}}><p>Отправить Сообщения</p></Link>
         </div>
         </div>
       </div>
