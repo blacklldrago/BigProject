@@ -51,6 +51,10 @@ function Homepage() {
   useEffect(() => {
     AOS.init();
   }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, []);
+
 
   return(<div>
     <div className={sHome["container1"]}>

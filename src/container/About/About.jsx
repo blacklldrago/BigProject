@@ -44,6 +44,10 @@ function About (){
   useEffect(() => {
     AOS.init();
   }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, []);
+
   const src = "https://it.softclub.tj/front/video/Open-Day-at-Softclub-IT-Academy-muted.webm"
   const video2 = "https://it.softclub.tj/front/video/Softclub-Ad-muted.webm"
   return (<div>

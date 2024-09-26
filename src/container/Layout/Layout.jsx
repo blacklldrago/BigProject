@@ -5,13 +5,17 @@ import search from "./search.png";
 import startUp from "./startUp.png";
 import menu from "./menu.png";
 import blacklogo from "./blacklogo.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Layout() {
     const [ modal, setModal ] = useState(false)
     function handleClick(){
         setModal(!modal)
     }
+    useEffect(() => {
+      window.scrollTo(0, 0); // Scroll to top on route change
+    }, []);
+  
   return (
     <div>
       <div className={sLayot["container"]}>

@@ -7,6 +7,10 @@ function NoMath (){
   useEffect(() => {
     AOS.init();
   }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, []);
+
   return (<div>
     <div className={nos["container1"]}>
       <div className={nos["container"]}>

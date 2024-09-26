@@ -12,6 +12,10 @@ function Services (){
   useEffect(() => {
     AOS.init();
   }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, []);
+
   return (<div>
     <div className={serv["container1"]} data-aos="flip-right" data-aos-duration="1500"> 
       <div className={serv["container"]}>

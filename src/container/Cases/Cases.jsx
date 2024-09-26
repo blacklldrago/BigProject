@@ -19,6 +19,10 @@ function Cases(){
   useEffect(() => {
     AOS.init();
   }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, []);
+
   return (<div>
     <div className={cs["container1"]}>
       <div className={cs["container"]}>
